@@ -1,0 +1,65 @@
+﻿#pragma kernel CSMain
+#include "FastNoiseHLSL.hlsl"
+
+const uint chunkSize;
+const uint chunkRowSize;
+const uint chunkPlaneSize;
+const float threshold;
+// in
+const Buffer<int3> ChunkPositionsToGenerate;
+// out
+RWBuffer<int> ChunksVoxelData;
+
+[numthreads(256,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	fnl_state noise = fnlCreateState();
+	noise.noise_type = FNL_NOISE_OPENSIMPLEX2;
+
+	const float3 chunkPos = ChunkPositionsToGenerate[id.x];
+	bool empty = true;
+
+	const uint startingIndex = id.x * (chunkSize / (uint)4);
+	ChunksVoxelData[startingIndex] = 0;
+
+	uint shiftCounter = 0;
+	uint indexCounter = 0;
+
+
+	uint counter = 0;
+	for (uint y = 0; y < chunkRowSize; y++) {
+		for (uint z = 0; z < chunkRowSize; z++) {
+			for (uint x = 0; x < chunkRowSize; x++) {
+				if (fnlGetNoise3D(noise, chunkPos.x + x, chunkPos.y + y, chunkPos.z + z) >= threshold) {
+
+					ChunksVoxelData[startingIndex + indexCounter] |= 1 << shiftCounter;
+					empty = false;
+				}
+				else {
+					ChunksVoxelData[startingIndex + indexCounter] &= ~(255 << shiftCounter);
+				}
+
+				shiftCounter += 8;
+				if (shiftCounter >= 32) {
+					shiftCounter = 0;
+					indexCounter++;
+					if (indexCounter < chunkSize / (uint)4) {
+						ChunksVoxelData[startingIndex + indexCounter] = 0;
+					}
+				}
+			}
+		}
+	}
+
+	
+	if (empty) {
+		ChunksVoxelData[startingIndex] |= 255; // marking the chunk as empty, 255 cannot be used for a material
+	}
+}
+
+
+
+
+
+
+
