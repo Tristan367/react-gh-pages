@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.5b2dbc4c.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.ff84400f.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.ff84400f.chunk.js.map",
+    "main.js": "/react-gh-pages/static/js/main.def85bc5.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.def85bc5.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.3df77ad9.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.3df77ad9.js.map",
     "static/js/2.3f44d12f.chunk.js": "/react-gh-pages/static/js/2.3f44d12f.chunk.js",
@@ -23,6 +23,7 @@
     "static/media/VoxelRaycasting3.848ce273.PNG": "/react-gh-pages/static/media/VoxelRaycasting3.848ce273.PNG",
     "static/media/main.css": "/react-gh-pages/static/media/overlay.eac66bf8.png",
     "static/media/chessAIMain.fc881753.cpp": "/react-gh-pages/static/media/chessAIMain.fc881753.cpp",
+    "static/media/mathLibrary2.d6535427.PNG": "/react-gh-pages/static/media/mathLibrary2.d6535427.PNG",
     "static/media/pic02.051ce017.jpg": "/react-gh-pages/static/media/pic02.051ce017.jpg",
     "static/media/pic03.884b90c5.jpg": "/react-gh-pages/static/media/pic03.884b90c5.jpg",
     "static/media/pic04.9aec2419.jpg": "/react-gh-pages/static/media/pic04.9aec2419.jpg",
@@ -36,6 +37,6 @@
     "static/js/runtime-main.3df77ad9.js",
     "static/js/2.3f44d12f.chunk.js",
     "static/css/main.5b2dbc4c.chunk.css",
-    "static/js/main.ff84400f.chunk.js"
+    "static/js/main.def85bc5.chunk.js"
   ]
 }
