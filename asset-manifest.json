@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.bb61ce91.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.edfe12c8.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.edfe12c8.chunk.js.map",
+    "main.css": "/react-gh-pages/static/css/main.594cf0bd.chunk.css",
+    "main.js": "/react-gh-pages/static/js/main.95dfbf90.chunk.js",
+    "main.js.map": "/react-gh-pages/static/js/main.95dfbf90.chunk.js.map",
     "runtime-main.js": "/react-gh-pages/static/js/runtime-main.3df77ad9.js",
     "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.3df77ad9.js.map",
     "static/js/2.46cc01a4.chunk.js": "/react-gh-pages/static/js/2.46cc01a4.chunk.js",
     "static/js/2.46cc01a4.chunk.js.map": "/react-gh-pages/static/js/2.46cc01a4.chunk.js.map",
     "index.html": "/react-gh-pages/index.html",
-    "static/css/main.bb61ce91.chunk.css.map": "/react-gh-pages/static/css/main.bb61ce91.chunk.css.map",
+    "static/css/main.594cf0bd.chunk.css.map": "/react-gh-pages/static/css/main.594cf0bd.chunk.css.map",
     "static/js/2.46cc01a4.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.46cc01a4.chunk.js.LICENSE.txt",
     "static/media/ChessAIProject.253051cf.PNG": "/react-gh-pages/static/media/ChessAIProject.253051cf.PNG",
     "static/media/ChunkWithMesh.021a411c.cs": "/react-gh-pages/static/media/ChunkWithMesh.021a411c.cs",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.3df77ad9.js",
     "static/js/2.46cc01a4.chunk.js",
-    "static/css/main.bb61ce91.chunk.css",
-    "static/js/main.edfe12c8.chunk.js"
+    "static/css/main.594cf0bd.chunk.css",
+    "static/js/main.95dfbf90.chunk.js"
   ]
 }
